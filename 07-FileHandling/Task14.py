@@ -1,0 +1,5 @@
+file=open('data.txt','w')
+file.write('Szczepan Pieta\n')
+file.write('UEK\n')
+file.write('Applied Informatics\n')
+file.close()

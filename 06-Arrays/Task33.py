@@ -1,5 +1,8 @@
 arr1=[1,0,4,9,6]
-arr2=[6,8,3,1,0,5,7]
+arr2=[6,8,3,1,0,5,7,13,7,8,9,3]
+
+
+
 
 def bubbleSort(arr):
     n = len(arr)
@@ -16,29 +19,21 @@ def bubbleSort(arr):
 bubbleSort(arr1)
 bubbleSort(arr2)
 
-def median(array):
-    for x in range(len(array)):
-        med=array[len(array)//2]
-        return med
+print(arr1)
+print(arr2)
 
-m=median(arr1)
-s=median(arr2)
+def median(arr1):
+    arr = arr1.copy()
+    bubbleSort(arr)
+    n = len(arr)
+    if n % 2 == 0:
+        return (arr[n // 2] + arr[n // 2 - 1]) / 2
+    else:
+        return arr[n // 2]
 
+print("median: ",median(arr1))
+print("median: ",median(arr2))
 
-print("Sorted array is:",end=" ")
-for i in range(len(arr1)):
-    print(arr1[i], end=" ")
-
-print()
-
-print("Mediana is:",m)
-
-print("Sorted array is:",end=" ")
-for i in range(len(arr2)):
-    print(arr2[i], end=" ")
-
-print()
-print("Mediana is:",s)
 
 
 

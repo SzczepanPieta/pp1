@@ -1,12 +1,18 @@
+def great(array,f):
+    z=0
+    for x in range(len(array)):
+        if array[x]>f:
+            z+=1
+            
+    return z
+
 arr=[3,6,9,1,4]
 
-i=int(input("Write a number, and we will write all the numbers of the elements that are greater than your number: "))
+fd=int(input("Put a number here: "))
+print(great(arr,fd))
+aq = [1,2,3,4,6,7,-2]
+fq=int(input("Put a second number here: "))
 
-print("The quantity of number is: ",end="")
-a=0
-for x in range(len(arr)):
-    if arr[x]>i:
-        a=a+1
-print(a)      
+print(great(aq,fq))
 
 

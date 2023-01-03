@@ -1,15 +1,30 @@
 arr=[5,1,9,6,1]
 
-max=arr[0]
-min=arr[0]
+def min(array):
+    k=array[0]
+    for x in range(len(array)):
+        if array[x]<k:
+            k=array[x]
+    return k
 
-for x in range(len(arr)):
-    if arr[x]>max:
-        max=arr[x]
-    if arr[x]<min:
-        min=arr[x]
 
-print("Array:",arr)
-diff=max-min
-print("Result:",diff)
+print(min(arr))
+
+def max(array):
+    m=array[0]
+    for i in range(len(array)):
+        if array[i]>m:
+            m=array[i]
+    return m
+
+print(max(arr))
+
+def extraction(array):
+    z=max(array)
+    s=min(array)
+
+    ext=z-s
+    return ext
+
+print(extraction(arr))
 

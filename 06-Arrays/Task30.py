@@ -1,22 +1,26 @@
 arr=[15,38,7,23,14]
 
 def occurs(number,array):
-    for x in range(len(array)):
-        if number==array[x]:
+    for i in range(len(array)):
+        if number==array[i]:
             return True
 
-ax=occurs(12,[12,3,4])
-print(ax)
+print(occurs(14,arr))
 
-x=int(input("Number: "))
-print("Array :",end="")
-for j in range(len(arr)):
-    print(arr[j],end=" ")
+xed=int(input("Number: "))
+
+print("Array: ",end="")
+
+for i in range(len(arr)):
+    print(arr[i],end=" ")
 
 print()
 
-for i in range(len(arr)):
-    if x==arr[i]:
-        print("number",x,"appers in the array")
+a=occurs(xed,arr)
+
+if a==True:
+    print(f"Result: number {xed} appers in the array")
+
+
     
 

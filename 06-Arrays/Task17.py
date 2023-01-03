@@ -15,7 +15,7 @@ for i in range(len(arr)):
         if arr[i][j]%2==0:
             even=arr[i][j]+even
 
-print(even)
+print(even) 
             
 
 

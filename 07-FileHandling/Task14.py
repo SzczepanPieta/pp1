@@ -1,4 +1,4 @@
-file=open('data.txt','w')
+file=open('07-FileHandling/data.txt','w')
 file.write('Szczepan Pieta\n')
 file.write('UEK\n')
 file.write('Applied Informatics\n')

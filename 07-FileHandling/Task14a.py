@@ -1,0 +1,6 @@
+file=open("07-FileHandling/name.txt","w")
+file.write("Szczepan\n")
+file.write("Pieta\n")
+file.write("Uek\n")
+file.write("Applied Informatics")
+file.close()

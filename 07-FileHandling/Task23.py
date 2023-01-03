@@ -1,10 +1,9 @@
-MeatAndFish=open("shoppinglist.txt","r")
-GrainAndBread=open("shoppinglist.txt","r")
-shoppinglist=open("shoppinglist.txt","w")
+MeatAndFish=open("07-FileHandling/MeatAndFish.txt","r")
+GrainAndBread=open("07-FileHandling/GrainAndBread.txt","r")
+shoppinglist=open("07-FileHandling/shoppinglist.txt","w")
 
 for lines in MeatAndFish:
     shoppinglist.write(lines)
-shoppinglist.write("\n")
 for lines in GrainAndBread:
     shoppinglist.write(lines)
     

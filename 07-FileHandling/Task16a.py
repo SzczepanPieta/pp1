@@ -1,0 +1,5 @@
+file=open("07-FileHandling/shopping.txt","a")
+x=input("Podaj artykul do wpisania: ")
+file.write(x)
+file.write("\n")
+file.close()

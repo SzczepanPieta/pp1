@@ -1,6 +1,6 @@
-fn = open('random.txt', 'r')
+fn = open('07-FileHandling/random.txt', 'r')
   
-fn1 = open('copy.txt', 'w')
+fn1 = open('07-FileHandling/copy.txt', 'w')
   
 cont = fn.readlines()
 type(cont)

@@ -1,4 +1,8 @@
-def multiplication(x,y):
-    return x*y
-    
-print( f"15 * 12 is {multiplication(15,12)}" )
+def keypad():
+    x=1
+    while x <=9:
+        print(x, end=" ")
+        if (x%3)==0:  
+            print() 
+        x=x+1      
+keypad()

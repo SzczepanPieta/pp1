@@ -1,7 +1,7 @@
-def integer(N):
-    for x in range(N):
-        print(x+1,end=" ")
+def display_university_addres():
+    print("Cracow University of Economics")
+    print("Rakowicka 27")
+    print("31-510 Krakow, Poland")
 
-integer(15)
-print()
-integer(25)        
+display_university_addres()
+display_university_addres()
